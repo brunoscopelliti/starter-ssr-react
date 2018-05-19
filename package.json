@@ -1,0 +1,36 @@
+{
+  "name": "starter-ssr-react",
+  "version": "0.1.0",
+  "description": "A ready to use express/reactjs web app for quickly scaffold new projects, or debugging.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint app/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoscopelliti/starter-ssr-react.git"
+  },
+  "keywords": [
+    "express",
+    "react",
+    "reactjs",
+    "ssr",
+    "server side rendering",
+    "redux example",
+    "react-router example",
+    "react starter ssr"
+  ],
+  "author": "Bruno Scopelliti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoscopelliti/starter-ssr-react/issues"
+  },
+  "homepage": "https://github.com/brunoscopelliti/starter-ssr-react#readme",
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-bruno": "1.3.0",
+    "eslint-plugin-react": "7.8.2",
+    "pre-commit": "1.2.2"
+  }
+}
