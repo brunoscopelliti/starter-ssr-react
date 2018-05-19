@@ -1,0 +1,4 @@
+*.hbs
+*.json
+*.scss
+app/dist
