@@ -3,6 +3,7 @@ const nodeExternals = require("webpack-node-externals");
 
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
+const babel = require("./build/common/configure-babel");
 const getModuleLocations = require("./build/common/base-folder");
 
 const appFolder = path.resolve(__dirname, "app");
@@ -15,6 +16,11 @@ module.exports = {
     __dirname: true,
   },
   entry: "./app/server.js",
+  module: {
+    rules: [
+      babel(appFolder),
+    ],
+  },
   resolve: {
     modules: getModuleLocations(),
   },
