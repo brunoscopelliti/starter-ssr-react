@@ -1,8 +1,10 @@
 import { createStore, combineReducers } from "redux";
 
+import { incrementCounter as count } from "components/increment-button/reducers";
+
 const reducers =
   () => combineReducers({
-    foo: null,
+    count,
   });
 
 const initializeState =

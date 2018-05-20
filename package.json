@@ -4,8 +4,9 @@
   "description": "A ready to use express/reactjs web app for quickly scaffold new projects, or debugging.",
   "main": "index.js",
   "scripts": {
+    "build:client": "webpack --config webpack.config.client.js",
     "build:server": "webpack --config webpack.config.server.js",
-    "build": "npm run build:server -- --mode development",
+    "build": "npm run build:client -- --mode development && npm run build:server -- --mode development",
     "prestart": "npm run build",
     "start": "node app/dist/server/server.js",
     "lint": "eslint app/**",

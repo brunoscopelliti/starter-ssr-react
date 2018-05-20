@@ -17,7 +17,7 @@ const renderAppHTML =
     const preloadedState = store.getState();
 
     const pageMeta = {
-      title: config.title,
+      title: config.TITLE,
     };
 
     const context = {};

@@ -16,6 +16,7 @@ class AssetsTask {
     const dist = path.resolve(process.cwd(), "app", "dist");
     app.use(serveFavicon(path.resolve(dist, "assets", "images", "favicon.ico")));
     app.use(express.static(path.resolve(dist, "assets", "images")));
+    app.use(express.static(path.resolve(dist, "client")));
   }
 }
 
